@@ -40,8 +40,8 @@ Display the user's Favorites in a meaningful way. The view should display inform
 
 ## Hard Mode Options
 
-1. Support the pagination provide in SWAPI results.
-2. Pictures! When displaying favorites, pull in a random Giphy image based on a search for each Star Wars resource and display it on the DOM.
+- Pictures! When a user clicks on a single Favorite, go get a Giphy image for that resource and show it on the DOM.
+- Support the pagination provided by the SWAPI results.
 
 
 ## Pro Mode

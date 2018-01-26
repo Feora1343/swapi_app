@@ -35,12 +35,12 @@ Display the user's Favorites in a meaningful way. The view should display inform
 
 ## Hard Mode
 
-1. When displaying favorites, pull in a random Giphy image based on a search for that Star Wars resource.
+Pictures! When displaying favorites, pull in a random Giphy image based on a search for each Star Wars resource and display it on the DOM.
 
 
 ## Pro Mode
 
 Allow users to add comments or notes to each Favorite in the database. This can be done in a number of ways. 
 
-If you feel adventurous, you can explore `sub-documents`. [Here is a repo with some examples of how to use them.](https://github.com/PrimeAcademy/mongoose-subdocs). There are 2 main approaches and a branch that shows both approaches.
+If you feel adventurous, you can explore `sub-documents`. [Here is a repo with some examples of how to use them.](https://github.com/PrimeAcademy/mongoose-subdocs). 
 

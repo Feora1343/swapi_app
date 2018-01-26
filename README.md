@@ -19,16 +19,9 @@ Each resource tends to have a lot of URLs to other SWAPI resources as values. Yo
 
 ### Search View
 
-Allow the user to choose which kind of resource (people, planets, etc) and to enter a keyword. Display the results in a meaningful way. Allow the user to Favorite any of the resources and save it to your database.
+Allow the user to choose which kind of resource (people, planets, etc) and to enter a keyword. Display the results in a meaningful way. Allow the user to Favorite any of the resources and save it to your database. Note that SWAPI search results can be paginiated. You can ignore multiple pages for Base Mode.
 
 ![Search View](images/search.png)
-
-
-### Browse View
-
-Allow a user to click on buttons to load and see resources of the various types. Note that SWAPI base results are paginiated. You can ignore multiple pages for Base Mode.
-
-![Search View](images/browse.png)
 
 
 ### Favorites View
@@ -40,8 +33,8 @@ Display the user's Favorites in a meaningful way. The view should display inform
 
 ## Hard Mode Options
 
-- Pictures! When a user clicks on a single Favorite, go get a Giphy image for that resource and show it on the DOM.
-- Support the pagination provided by the SWAPI results.
+- Pictures! In the Favorites View, when a user clicks on a single Favorite, go get a Giphy image for that resource and show it on the DOM.
+- In the Search View, support the pagination provided by the SWAPI search results. A good example paginated search: http://swapi.co/api/starships/?search=star
 
 
 ## Pro Mode

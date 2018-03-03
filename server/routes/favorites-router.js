@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const favoritesSchemaModule = require('../modules/schema-module');
 // CHANGE SCHEMA NAME AS NEEDED FOR YOUR PROJECT
 let favoritesSchema = favoritesSchemaModule;
-let Favorite = mongoose.model('Favorite', favoriteSchema);
+let Favorite = mongoose.model('Favorite', favoritesSchema);
 
 // START GET ROUTE
 

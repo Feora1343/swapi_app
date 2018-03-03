@@ -3,9 +3,24 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 // CHANGE SCHEMA MODULE FILE NAME AND NAME AS NEEDED FOR YOUR PROJECT
-const SCHEMANAMEHEREMODULE = require('../modules/schema.module');
+const favoritesSchemaModule = require('../modules/schema-module');
 // CHANGE SCHEMA NAME AS NEEDED FOR YOUR PROJECT
-let SCHEMANAMEHERE = SCHEMANAMEHEREMODULE;
-let NAMEHERE = mongoose.model('NAMEHERE', SCHEMANAMEHERE);
+let favoritesSchema = favoritesSchemaModule;
+let Favorite = mongoose.model('Favorite', favoriteSchema);
+
+// START GET ROUTE
+
+
+// END GET ROUTE
+
+// START POST ROUTE
+
+
+// END POST ROUTE
+
+// START DELETE ROUTE
+
+
+// END DELETE ROUTE
 
 module.exports = router;

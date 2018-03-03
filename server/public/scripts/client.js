@@ -2,22 +2,22 @@
 const myApp = angular.module('myApp', ['ngRoute', 'ngMaterial']);
 
 /** ---------- MODULE CONFIGURATION ---------- **/
-myApp.config(function($routeProvider, $mdThemingProvider){
+myApp.config(($routeProvider, $mdThemingProvider) => {
   console.log('config loaded');
 
   /* ---------- DEFINE CLIENT SIDE ROUTES ---------- */
   // CHANGE TEMPLATEURL AND CONTROLLER AS NEEDED FOR YOUR PROJECT
   $routeProvider
-  .when('/URLHERE', {
-      templateUrl: '/views/viewName.html',
-      controller: 'CONTROLLERNAME as vm'
+  .when('/search', {
+      templateUrl: '/views/search.html',
+      controller: 'SearchController as sc'
   })
-  .when('/URLHERE', {
-      templateUrl: '/views/viewName.html',
-      controller: 'CONTROLLERNAME as vm'
+  .when('/favorites', {
+      templateUrl: '/views/favorites.html',
+      controller: 'FavoritesController as fc'
   })
   .otherwise(
-      { redirectTo: '/URLHERE' }
+      { redirectTo: '/search' }
   );
   /* ---------- CHANGE THEME AS NEEDED FOR YOUR PROJECT ---------- */
   $mdThemingProvider.theme('default')

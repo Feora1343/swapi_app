@@ -1,5 +1,5 @@
 // CHANGE CONTROLLER AND SERVICE NAME AS NEEDED FOR YOUR PROJECT
-myApp.controller("FavoritesController", ['TheFavorites', function(theFavorites){
+myApp.controller("FavoritesController", ['TheFavorites', (theFavorites) => {
 	console.log('FavoritesController locked and loaded!');
 	
 	const self = this;

@@ -1,5 +1,5 @@
 // CHANGE CONTROLLER AND SERVICE NAME AS NEEDED FOR YOUR PROJECT
-myApp.controller("SearchController", ['TheSearch', function(theSearch){
+myApp.controller("SearchController", ['TheSearch', (theSearch) => {
 	console.log('SearchController locked and loaded!');
 	
 	const self = this;

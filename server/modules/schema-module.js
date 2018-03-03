@@ -3,7 +3,10 @@ const mongoose = require('mongoose');
 
 let favoritesSchema = new mongoose.Schema(
     {
-    // FILL IN YOUR SCHEMA AS NEEDED FOR YOUR PROJECT        
+    url: {type: String, unique: true},
+    name: {type: String},
+    title: {type: String, default: false},
+    favorited: {type: Boolean, default: false}       
     }   
 )
 

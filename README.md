@@ -6,15 +6,25 @@ A common task in dealing with data from an API is to create a user-friendly inte
 ## Base Application
 
 Your app will have... 
-- [ ] 2 views 
+- [ ] 2 views
 
 Use client-side...
-- [ ] routing (ngRoute) 
-- [ ] views 
-- [ ] controllers 
+- [ ] index.html
+- [ ] nav.html for views
+- [ ] client.js
+- [ ] routing (ngRoute)
+    -[ ] favorites-router.js
+- [ ] views
+    - [ ] favorites.html
+    - [ ] search.html
+- [ ] controllers
+    - [ ] favorites-controller.js
+    - [ ] search-controller.js
 - [ ] service
+    - [ ] swapi-service.js
 - [ ] Angular Material would be awesome but not required
 - [ ] style your application
+    - [ ] main.css
 - [ ] Users will be able to find and favorite SWAPI resources.
 - [ ] They will be also be able to Favorite any resource they want 
 - [ ] These favorites will need to be stored in your Mongo database through Mongoose. **You'll need to determine how much information to store in your database keeping in mind you can always get the data again from the API.**

@@ -1,5 +1,5 @@
 /** ---------- ANGULAR MODULE ---------- **/
-const myApp = angular.module('myApp', ['ngRoute', 'ngMaterial']);
+const myApp = angular.module('myApp', ['ngRoute', 'ngMaterial', 'ngAria', 'ngMessages']);
 
 /** ---------- MODULE CONFIGURATION ---------- **/
 myApp.config(($routeProvider, $mdThemingProvider) => {

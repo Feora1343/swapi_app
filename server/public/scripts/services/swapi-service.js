@@ -1,5 +1,5 @@
 // CHANGE SERVICE NAME AS NEEDED FOR YOUR PROJECT
-myApp.service('SwapiService', ['$http', ($http) => {
+myApp.service('SwapiService', ['$http', function($http) {
 	console.log('SwapiService Locked and loaded!');
 
 	const self = this;
@@ -58,5 +58,5 @@ myApp.service('SwapiService', ['$http', ($http) => {
 			console.log('Error DELETing:', response);
 		})
 	}
-	self.getFaorites();
+	self.getFavorites();
 }]);

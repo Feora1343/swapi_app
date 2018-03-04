@@ -1,11 +1,5 @@
 /** ---------- ANGULAR MODULE ---------- **/
 const myApp = angular.module('myApp', ['ngRoute', 'ngMaterial', 'ngAria', 'ngMessages'])
-  /* ---------- CHANGE THEME AS NEEDED FOR YOUR PROJECT ---------- */
-  .config(function($mdThemingProvider) {
-    $mdThemingProvider.theme('default')
-    .primaryPalette('blue-grey')
-    .accentPalette('blue-grey');
-    
 /** ---------- MODULE CONFIGURATION ---------- **/
 myApp.config(($routeProvider, $mdThemingProvider) => {
   console.log('config loaded');
@@ -13,6 +7,9 @@ myApp.config(($routeProvider, $mdThemingProvider) => {
     /* ---------- DEFINE CLIENT SIDE ROUTES ---------- */
     // CHANGE TEMPLATEURL AND CONTROLLER AS NEEDED FOR YOUR PROJECT
     $routeProvider
+    .when('/home', {
+      templateUrl: '/views/home.html'
+    })
     .when('/search', {
       templateUrl: '/views/search.html',
       controller: 'SearchController as sc'
@@ -21,8 +18,18 @@ myApp.config(($routeProvider, $mdThemingProvider) => {
       templateUrl: '/views/favorites.html',
       controller: 'FavoritesController as fc'
     })
-    .otherwise(
-    { redirectTo: '/search' }
-    );
+    .when('/about', {
+        templateUrl: '/views/about.html'
     })
+    .otherwise(
+    { redirectTo: '/home' }
+    );
+  })
+   /* ---------- CHANGE THEME AS NEEDED FOR YOUR PROJECT ---------- */
+   .config(function($mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+    .primaryPalette('blue-grey')
+    .accentPalette('indigo')
+    .warnPalette('red')
+    .backgroundPalette('grey');
 });

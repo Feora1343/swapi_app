@@ -13,9 +13,10 @@ myApp.service('SwapiService', ['$http', function($http) {
 
 	// THIS HANDLES SEARCHING SWAPI
 	self.searchSwapi = (resource, keyword) => {
-		$http.get('https://swapi.co/api' + resource + '/?search='+ keyword)
+		$http.get('https://swapi.co/api/' + resource + '/?search='+ keyword)
 		.then((response) => {
 			self.searchResults.list = response.data.results;
+			console.log('self.searchResults.list', self.searchResults.list);
 		})
 	}
 
@@ -32,6 +33,7 @@ myApp.service('SwapiService', ['$http', function($http) {
 		$http.get('/favorites')
 		.then((response) => {
 			self.favorites.list = response.data;
+			console.log('self.favorites.list', self.favorites.list);
 		})
 		.catch((response) => {
 			console.log('Error GETting getFavorites!');

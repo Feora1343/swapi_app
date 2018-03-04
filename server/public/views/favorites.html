@@ -1,1 +1,51 @@
-<!-- HTML here for your view -->
+<h2>Favorites</h2>
+    <md-content class="md-padding" layout-xs="column" layout-wrap layout="row" md-colors="{background: 'default-background-hue-3'}">
+        <div flex-xs="" flex-gt-xs="33" layout="column" ng-repeat="favorite in fc.favorites.list">
+            <md-card>
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline" ng-if="favorite.name != 'false'">{{favorite.name}}</span>
+                        <span class="md-headline" ng-if="favorite.title != 'false'">{{favorite.title}}</span>
+                    </md-card-title-text>
+               </md-card-title> 
+                <md-card-content>
+                        <p ng-if="favorite.birth_year">
+                                Birth Year: {{favorite.birth_year}}
+                            </p>
+                            <p ng-if="favorite.gender">
+                                Gender: {{favorite.gender}}
+                            </p>
+                            <p ng-if="favorite.opening_crawl">
+                                Opening Crawl: {{favorite.opening_crawl}}
+                            </p>
+                            <p ng-if="favorite.manufacturer">
+                                Manufacturer: {{favorite.manufacturer}}
+                            </p>
+                            <p ng-if="favorite.passengers">
+                                Passengers: {{favorite.passengers | number}}
+                            </p>
+                            <p ng-if="favorite.cargo_capacity">
+                                Cargo Capacity: {{favorite.cargo_capacity | number}}
+                            </p>
+                            <p ng-if="favorite.classification">
+                                Classification: {{favorite.classification}}
+                            </p>
+                            <p ng-if="favorite.language">
+                                Language: {{favorite.language}}
+                            </p>
+                            <p ng-if="favorite.climate">
+                                Climate: {{favorite.climate}}
+                            </p>
+                            <p ng-if="favorite.population">
+                                Population: {{favorite.population}}
+                            </p>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end center">
+                    <p>Remove From Favorites</p>
+                    <md-button class="md-icon-button" aria-label="Delete">
+                    <md-icon ng-click="fc.deleteFavorite(favorite._id)"><i class="far fa-trash-alt"></i></md-icon>
+                    </md-button>
+                </md-card-actions>
+            </md-card>
+        </div>
+    </md-content>

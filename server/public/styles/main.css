@@ -1,1 +1,28 @@
-/* INSERT CUSTOM CSS HERE AS NEEDED FOR YOUR PROJECT *\
+@font-face {
+    font-family: starWars;
+    src: url("./fonts/starwars.woff") format("woff");
+}
+body {
+    font-family: starWars;
+}
+
+.navBardemoBasicUsage md-content .ext-content {
+    padding: 50px;
+    margin: 20px;
+}
+
+.md-card-image {
+    width: 200px;
+}
+
+.student {
+    text-align: center;
+}
+
+.md-padding {
+    flex-wrap:wrap;
+}
+
+md-icon {
+    color: rgb(255, 110, 134)
+}

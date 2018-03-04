@@ -17,13 +17,15 @@
     <script src="scripts/controllers/search-controller.js"></script>
     <script src="scripts/services/swapi-service.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body ng-app="myApp">
-    <nav ng-include="'/views/nav/nav.html'">
+<body ng-app="myApp" md-colors="{background: 'default-background-hue-3'}">
+    <md-content md-colors="{background: 'default-background-hue-3'}">
+    <nav ng-include="'/views/nav.html'">
     </nav>
     <main ng-view>
     </main>
-    </body>
+    </md-content>
+</body md-colors="{background: 'default-background-hue-3'}">
 </html>

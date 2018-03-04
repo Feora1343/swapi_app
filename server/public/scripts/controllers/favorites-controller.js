@@ -4,8 +4,6 @@ myApp.controller("FavoritesController", ['SwapiService', function(SwapiService) 
 	
 	const self = this;
 
-	// THIS HANDLES SENDING MESSAGE THAT SERVICE IS WORKING
-	self.message = SwapiService.message;
 	self.favorites = SwapiService.favorites;
 
 	// RUN THE getFavorites FUNCTION
@@ -14,7 +12,9 @@ myApp.controller("FavoritesController", ['SwapiService', function(SwapiService) 
 	}
 
 	// RUN THE deleteFavorite FUNCTION
-	self.deletefavorite = (favoriteId) => {
-		SwapiService.deletefavorite(favoriteId);
+	self.deleteFavorite = (favoriteId) => {
+		SwapiService.deleteFavorite(favoriteId);
 	}
+
+	self.getFavorites();
 }]);

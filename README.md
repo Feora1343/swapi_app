@@ -50,8 +50,8 @@ Each resource tends to have a lot of URLs to other SWAPI resources as values. Yo
 
 ### Favorites View
 
-- [ ] Display the user's Favorites in a meaningful way
-    - [ ] The view should display information from the API
+- [x] Display the user's Favorites in a meaningful way
+    - [x] The view should display information from the API
     - [x] The user should be able to remove Favorites from this view.
 
 ![Search View](images/favorites.png)

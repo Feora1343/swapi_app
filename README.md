@@ -1,7 +1,19 @@
 # MEAN Star Wars API Interface
 
-A common task in dealing with data from an API is to create a user-friendly interface to access and find information. This weekend that's exactly what we'll be doing with a MEAN stack application.
+A common task in dealing with data from an API is to create a user-friendly interface to access and find information.
 
+## What Are We Building It With?
+```                          
+,___________,         .----------,  _Request_    .---------,         .----------.
+|___________|       ,'________ ,'|   -> | ->   ,'________,'|        ( ~--------~ )
+| HTML 5    |      | AngularJS | |      |      | _______ | |        | ~--------~ |
+| CSS       |      | Angular   | |      |      | Node.js | |        | MongoDB    |
+| Angular   | <--  |  Material | |      |      | Express | |  <--   | Robo3T     |        
+|  Material |      |           | ;   <- | <-   | _______ | ;        | ~--------~ |
+|___________|      |___________|'  _Response_  |_________|'         `.__________.'
+    Client          Client Logic                  Server               Database
+           *Front End*                                     *Back End*              
+```
 
 ## Base Application
 
@@ -29,11 +41,9 @@ Use client-side...
 - [x] They will be also be able to Favorite any resource they want 
 - [x] These favorites will need to be stored in your Mongo database through Mongoose. **You'll need to determine how much information to store in your database keeping in mind you can always get the data again from the API.**
 
-
 ### Links
 
 Each resource tends to have a lot of URLs to other SWAPI resources as values. You can choose to display these as links to the SWAPI site if you want.
-
 
 ### Search View
 
@@ -43,16 +53,10 @@ Each resource tends to have a lot of URLs to other SWAPI resources as values. Yo
     - [x] etc 
     - [x] enter a keyword search 
 - [x] Display the results in a meaningful way
-- [x] Allow the user to Favorite any of the resources and save it to your database. Note that SWAPI search results can be paginiated. You can ignore multiple pages for Base Mode.
-
-![Search View](images/search.png)
-
+- [x] Allow the user to Favorite any of the resources and save it to your database. Note that SWAPI search results can be paginiated.
 
 ### Favorites View
 
 - [x] Display the user's Favorites in a meaningful way
     - [x] The view should display information from the API
     - [x] The user should be able to remove Favorites from this view.
-
-![Search View](images/favorites.png)
-

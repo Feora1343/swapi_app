@@ -13,7 +13,7 @@ Use client-side...
 - [x] nav.html for views
 - [x] client.js
 - [x] routing (ngRoute)
-    -[x] favorites-router.js
+    - [x] favorites-router.js
 - [x] views
     - [x] favorites.html
     - [x] search.html
@@ -55,17 +55,4 @@ Each resource tends to have a lot of URLs to other SWAPI resources as values. Yo
     - [x] The user should be able to remove Favorites from this view.
 
 ![Search View](images/favorites.png)
-
-
-## Hard Mode Options
-
-- [ ] Pictures! In the Favorites View, when a user clicks on a single Favorite, go get a Giphy image for that resource through the Giphy API and show it on the DOM.
-- [ ] In the Search View, support the pagination provided by the SWAPI search results. A good example paginated search: http://swapi.co/api/starships/?search=star
-
-
-## Pro Mode
-
-- [ ] Allow users to add comments or notes to each Favorite in the database. This can be done in a number of ways. 
-
-- [ ] If you feel adventurous, you can explore `sub-documents`. [Here is a repo with some examples of how to use them.](https://github.com/PrimeAcademy/mongoose-subdocs). 
 
